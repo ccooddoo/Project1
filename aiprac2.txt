@@ -22,9 +22,11 @@ calc:-
     D is 100 mod 30, write('100 mod 30 is '), write(D), nl.
 output: calc.
 
+count_down(L, H) :- between (L, H, Y), Z is H - Y, write(Z), nl. count_up(L, H) :- between (L, H, Y), Zis YL, write(Z), nl.
+count_down (12.17).
+
  count_to_10(10) :- 
     write(10), nl.
-
 count_to_10(X) :-
     write(X), nl,
     Y is X + 1,
@@ -34,8 +36,6 @@ output: count_to_10(1).
 max(X,Y,X):-
 X >= Y,!.
 max(_,Y,Y).
-
-
 min(X,Y,X):-
 X =< Y,!.
 min(_,Y,Y).
