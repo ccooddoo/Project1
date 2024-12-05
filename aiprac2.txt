@@ -7,6 +7,7 @@
 -2 is 6-8.
 
 3 is 6/2. 3 is 7/2.
+output:A is 3, B is 4,C is A+B.
 
 calc:- 
     X is 100 + 200, write('100 + 200 is '), write(X), nl,
@@ -19,6 +20,7 @@ calc:-
     C is 100 ^ 2, write('100 ^ 2 is '), write(C), nl,
     
     D is 100 mod 30, write('100 mod 30 is '), write(D), nl.
+output: calc.
 
  count_to_10(10) :- 
     write(10), nl.
@@ -27,6 +29,7 @@ count_to_10(X) :-
     write(X), nl,
     Y is X + 1,
     count_to_10(Y).
+output: count_to_10(1).
 
 max(X,Y,X):-
 X >= Y,!.
@@ -36,4 +39,5 @@ max(_,Y,Y).
 min(X,Y,X):-
 X =< Y,!.
 min(_,Y,Y).
+output:max(100,200,Max).
 
